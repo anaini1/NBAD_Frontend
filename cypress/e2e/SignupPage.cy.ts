@@ -1,7 +1,7 @@
 // SignupPage.e2e.js
 describe('Signup Page', () => {
     beforeEach(() => {
-      cy.visit('http://localhost:3001/signup');
+      cy.visit('https://coral-app-aqy9y.ondigitalocean.app/signup');
     });
   
     it('displays the signup form correctly', () => {

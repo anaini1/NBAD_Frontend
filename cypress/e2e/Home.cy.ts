@@ -1,7 +1,7 @@
 // Home.e2e.js
 describe('Home Page', () => {
     beforeEach(() => {
-      cy.visit('http://localhost:3001/');
+      cy.visit('https://coral-app-aqy9y.ondigitalocean.app/');
     });
   
     it('displays the page title correctly', () => {
@@ -18,7 +18,7 @@ describe('Home Page', () => {
   
     it('navigates to the login page when "Sign In" button is clicked', () => {
       cy.contains('button.menu-btn', 'Sign In').click();
-      cy.url().should('include', 'http://localhost:3001/login');
+      cy.url().should('include', 'https://coral-app-aqy9y.ondigitalocean.app/login');
     });
   
   });
