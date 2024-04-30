@@ -47,13 +47,10 @@ function App() {
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/login" element={<LoginPage setAuthenticated={setAuthenticated} />} />
           <Route path="/dashboard" element={<PrivateRoute element={<DashboardPage />} />} />
-          {/* <Route path="/dashboard" element={<DashboardPage />} /> */}
            <Route path="/addcategory" element={<PrivateRoute element={<AddCategory />} />} />
-           {/* <Route path="/addcategory" element={<AddCategory />} /> */}
            <Route path="/modifycategory" element={<PrivateRoute element={<ModifyCategory />} />} />
            <Route path="/deletecategory" element={<PrivateRoute element={<DeleteCategory />} />} />
-          {/* <Route path="/deletecategory" element={<DeleteCategory />} /> */}
-        </Routes>
+         </Routes>
       </div>
     </Router>
   );
